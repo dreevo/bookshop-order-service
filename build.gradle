@@ -55,6 +55,13 @@ dependencyManagement {
     }
 }
 
+tasks.named('bootBuildImage') {
+    if (System.getProperty("os.arch").toLowerCase().startsWith('aarch')) {
+        builder = "ghcr.io/thomasvitale/java-builder-arm64"
+    }
+    builder = "paketobuildpacks/builder:tiny"
+}
+
 bootBuildImage {
     imageName = "${project.name}"
     environment = ["BP_JVM_VERSION": "17.*"]
