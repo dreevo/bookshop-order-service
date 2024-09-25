@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bookshop-order-service
+  labels:
+    app: bookshop-order-service
+spec:
+  type: ClusterIP
+  selector:
+    app: bookshop-order-service
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9002
