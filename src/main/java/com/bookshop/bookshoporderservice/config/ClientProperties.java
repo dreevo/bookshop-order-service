@@ -11,6 +11,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public record ClientProperties (
 
         @NotNull
-        URI catalogServiceUri
+        URI bookshopCatalogServiceUri
 
 ){}
