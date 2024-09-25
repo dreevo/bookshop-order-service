@@ -5,7 +5,7 @@ import com.bookshop.bookshoporderservice.book.Book;
 import com.bookshop.bookshoporderservice.book.BookClient;
 import com.bookshop.bookshoporderservice.order.domain.Order;
 import com.bookshop.bookshoporderservice.order.domain.OrderStatus;
-import com.bookshop.bookshoporderservice.web.OrderRequest;
+import com.bookshop.bookshoporderservice.order.web.OrderRequest;
 import org.junit.jupiter.api.Test;
 import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;

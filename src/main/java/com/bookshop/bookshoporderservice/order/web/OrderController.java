@@ -1,4 +1,4 @@
-package com.bookshop.bookshoporderservice.web;
+package com.bookshop.bookshoporderservice.order.web;
 
 
 import javax.validation.Valid;
