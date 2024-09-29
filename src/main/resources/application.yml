@@ -64,3 +64,15 @@ spring:
     url: jdbc:postgresql://localhost:5432/bookshopdb_order
 bookshop:
   bookshop-catalog-service-uri: "http://localhost:9001"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
+      show-components: always
+      probes:
+        enabled: true
